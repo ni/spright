@@ -1,0 +1,42 @@
+{
+  "name": "@ni-private/nimble-recipes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The NI Nimble UI Recipes Monorepo",
+  "scripts": {
+    "postinstall": "patch-package",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "pack": "npm run pack --workspaces --if-present",
+    "change": "beachball change",
+    "check": "beachball check --changehint \"Run 'npm run change' to generate a change file\"",
+    "invoke-publish": "cross-env-shell beachball publish --yes --access public --message \\\"applying package updates [skip ci]\\\" -n $NPM_SECRET_TOKEN",
+    "validate": "npm run build && npm run lint && npm run test",
+    "performance": "lhci autorun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ni/nimble-recipes.git"
+  },
+  "author": {
+    "name": "National Instruments"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ni/nimble-recipes/issues"
+  },
+  "homepage": "https://github.com/ni/nimble-recipes#readme",
+  "files": [
+    "!*"
+  ],
+  "workspaces": [
+  ],
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "beachball": "^2.31.0",
+    "cross-env": "^7.0.3",
+    "patch-package": "^6.4.7"
+  }
+}
