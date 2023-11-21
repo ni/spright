@@ -12,10 +12,10 @@ import { hiddenWrapper } from '../../utilities/tests/hidden';
 import { listOptionTag } from '../../list-option';
 import { numberFieldTag } from '../../number-field';
 import { selectTag } from '../../select';
-import { cardTag } from '..';
+import { accordionTag } from '..';
 
 const metadata: Meta = {
-    title: 'Tests/Card',
+    title: 'Tests/Accordion',
     parameters: {
         ...sharedMatrixParameters()
     }
@@ -24,7 +24,7 @@ const metadata: Meta = {
 export default metadata;
 
 const component = (): ViewTemplate => html`
-    <${cardTag}>
+    <${accordionTag}>
         <span slot="title">Title</span>
         <${numberFieldTag}>Numeric field 1</${numberFieldTag}>
         <${numberFieldTag}>Numeric field 2</${numberFieldTag}>
@@ -33,13 +33,13 @@ const component = (): ViewTemplate => html`
             <${listOptionTag} value="2">Option 2</${listOptionTag}>
             <${listOptionTag} value="3">Option 3</${listOptionTag}>
         </${selectTag}>
-    </${cardTag}>
+    </${accordionTag}>
 `;
 
-export const cardThemeMatrix: StoryFn = createMatrixThemeStory(
+export const accordionThemeMatrix: StoryFn = createMatrixThemeStory(
     createMatrix(component)
 );
 
-export const hiddenCard: StoryFn = createStory(
-    hiddenWrapper(html`<${cardTag} hidden>Hidden Card</${cardTag}>`)
+export const hiddenAccordion: StoryFn = createStory(
+    hiddenWrapper(html`<${accordionTag} hidden>Hidden Accordion</${accordionTag}>`)
 );

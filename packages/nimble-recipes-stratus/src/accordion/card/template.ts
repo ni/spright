@@ -1,7 +1,7 @@
 import { html } from '@microsoft/fast-element';
-import type { Card } from '.';
+import type { Accordion } from '.';
 
-export const template = html<Card>`
+export const template = html<Accordion>`
     ${
     '' /* Explicitly set role to work around Lighthouse error. See https://github.com/ni/nimble/issues/1650. */
 }

@@ -1,27 +1,27 @@
 import {
     DesignSystem,
-    Card as FoundationCard
+    Accordion as FoundationAccordion
 } from '@microsoft/fast-foundation';
 import { styles } from './styles';
 import { template } from './template';
 
 declare global {
     interface HTMLElementTagNameMap {
-        'nimble-card': Card;
+        'nimble-accordion': Accordion;
     }
 }
 
 /**
- * A nimble-styled card
+ * A nimble-styled accordion
  */
-export class Card extends FoundationCard {}
+export class Accordion extends FoundationAccordion {}
 
-const nimbleCard = Card.compose({
-    baseName: 'card',
-    baseClass: FoundationCard,
+const nimbleAccordion = Accordion.compose({
+    baseName: 'accordion',
+    baseClass: FoundationAccordion,
     template,
     styles
 });
 
-DesignSystem.getOrCreate().withPrefix('nimble').register(nimbleCard());
-export const cardTag = DesignSystem.tagFor(Card);
+DesignSystem.getOrCreate().withPrefix('nimble').register(nimbleAccordion());
+export const accordionTag = DesignSystem.tagFor(Accordion);

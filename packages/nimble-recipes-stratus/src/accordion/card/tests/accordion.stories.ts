@@ -8,17 +8,17 @@ import {
 import { listOptionTag } from '../../list-option';
 import { numberFieldTag } from '../../number-field';
 import { selectTag } from '../../select';
-import { cardTag } from '..';
+import { accordionTag } from '..';
 
-interface CardArgs {
+interface AccordionArgs {
     title: string;
 }
 
-const overviewText = `The \`nimble-card\` is a container that is designed to contain arbitrary content that is specified by a client
-application. The \`nimble-card\` is intended for grouping related content.`;
+const overviewText = `The \`nimble-accordion\` is a container that is designed to contain arbitrary content that is specified by a client
+application. The \`nimble-accordion\` is intended for grouping related content.`;
 
-const metadata: Meta<CardArgs> = {
-    title: 'Incubating/Card',
+const metadata: Meta<AccordionArgs> = {
+    title: 'Incubating/Accordion',
     tags: ['autodocs'],
     parameters: {
         docs: {
@@ -31,10 +31,10 @@ const metadata: Meta<CardArgs> = {
     render: createUserSelectedThemeStory(html`
     ${disableStorybookZoomTransform}
     ${incubatingWarning({
-        componentName: 'card',
+        componentName: 'accordion',
         statusLink: 'https://github.com/ni/nimble/issues/296'
     })}
-        <${cardTag}>
+        <${accordionTag}>
             <span slot="title">${x => x.title}</span>
             <${numberFieldTag}>Numeric field 1</${numberFieldTag}>
             <${numberFieldTag}>Numeric field 2</${numberFieldTag}>
@@ -43,12 +43,12 @@ const metadata: Meta<CardArgs> = {
                 <${listOptionTag} value="2">Option 2</${listOptionTag}>
                 <${listOptionTag} value="3">Option 3</${listOptionTag}>
             </${selectTag}>
-        </${cardTag}>
+        </${accordionTag}>
     `),
     argTypes: {
         title: {
             description:
-                'Text displayed as a title inside the card. Cards should **always include a title**. The title is used to provide an accessible name to assistive technologies.<br><br>Provide the title in an element targeted to the `title` slot.'
+                'Text displayed as a title inside the accordion. Accordions should **always include a title**. The title is used to provide an accessible name to assistive technologies.<br><br>Provide the title in an element targeted to the `title` slot.'
         }
     },
     args: {
@@ -58,4 +58,4 @@ const metadata: Meta<CardArgs> = {
 
 export default metadata;
 
-export const card: StoryObj<CardArgs> = {};
+export const accordion: StoryObj<AccordionArgs> = {};
