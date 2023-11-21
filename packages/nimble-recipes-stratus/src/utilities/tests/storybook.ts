@@ -1,7 +1,7 @@
 import { html, ViewTemplate } from '@microsoft/fast-element';
-import { themeProviderTag } from '@ni/nimble-components/dist/esm';
-import { bodyFont } from '@ni/nimble-components/dist/esm/design-tokens';
-import type { Theme } from '@ni/nimble-components/dist/esm/types';
+import { themeProviderTag } from '@ni/nimble-components/dist/esm/theme-provider';
+import { bodyFont } from '@ni/nimble-components/dist/esm/theme-provider/design-tokens';
+import type { Theme } from '@ni/nimble-components/dist/esm/theme-provider/types';
 import { createMatrix } from './matrix';
 import {
     BackgroundState,

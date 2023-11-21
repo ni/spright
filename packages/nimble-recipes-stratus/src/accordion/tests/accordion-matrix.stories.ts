@@ -9,9 +9,9 @@ import {
     createStory
 } from '../../utilities/tests/storybook';
 import { hiddenWrapper } from '../../utilities/tests/hidden';
-import { listOptionTag } from '../../list-option';
-import { numberFieldTag } from '../../number-field';
-import { selectTag } from '../../select';
+import { listOptionTag } from '@ni/nimble-components/dist/esm/list-option';
+import { numberFieldTag } from '@ni/nimble-components/dist/esm/number-field';
+import { selectTag } from '@ni/nimble-components/dist/esm/select';
 import { accordionTag } from '..';
 
 const metadata: Meta = {

@@ -9,7 +9,7 @@ import {
     standardPadding,
     titleFont,
     titleFontColor
-} from '../theme-provider/design-tokens';
+} from '@ni/nimble-components/dist/esm/theme-provider/design-tokens';
 
 export const styles = css`
     ${display('flex')}
