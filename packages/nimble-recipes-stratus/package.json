@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Nimble-based UI recipes for the NI Stratus project",
   "scripts": {
-    "build": "npm run build-components && npm run bundle-components && npm run build-storybook",
+    "build": "npm run build-components && npm run build-storybook",
     "lint": "npm run eslint && npm run prettier",
     "format": "npm run eslint-fix && npm run prettier-fix",
     "eslint": "eslint .",
@@ -17,7 +17,6 @@
     "storybook-open-webkit": "playwright wk http://localhost:6006",
     "build-components": "tsc -p ./tsconfig.json",
     "build-components:watch": "tsc -p ./tsconfig.json -w",
-    "bundle-components": "rollup --bundleConfigAsCjs --config",
     "tdd": "npm run build-components && npm run test-chrome",
     "tdd:watch": "npm run build-components:watch & npm run test-chrome:watch",
     "tdd-firefox": "npm run build-components && npm run test-firefox",
