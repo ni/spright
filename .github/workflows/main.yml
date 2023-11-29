@@ -83,7 +83,7 @@ jobs:
           workingDir: ./packages/nimble-recipes-stratus
           externals: |
             - '.storybook/public/**'
-          storybookBuildDir: ../../packages/site/dist/storybook
+          storybookBuildDir: ../../packages/nimble-recipes-stratus/dist/storybook
           exitOnceUploaded: true # Do not wait for test results
           exitZeroOnChanges: true # Option to prevent the workflow from failing
 
