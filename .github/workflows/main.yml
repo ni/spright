@@ -75,8 +75,7 @@ jobs:
 
       # Publish to Chromatic (from any push)
       - name: Publish to Chromatic
-        if: false
-        # if: github.event_name == 'push'
+        if: github.event_name == 'push'
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
