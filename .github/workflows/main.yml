@@ -74,7 +74,8 @@ jobs:
 
       # Publish to Chromatic (from any push)
       - name: Publish to Chromatic
-        if: github.event_name == 'push'
+        if: false
+        # if: github.event_name == 'push'
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
@@ -96,7 +97,8 @@ jobs:
 
       # Run Lighthouse audit (from any push)
       - name: Performance Audit with Lighthouse CI
-        if: github.event_name == 'push'
+        if: false
+        # if: github.event_name == 'push'
         run: npm run performance
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
@@ -120,7 +122,8 @@ jobs:
 
       # Update package versions, tag, and publish to npm (only from main)
       - name: Beachball publish
-        if: startsWith(github.ref, 'refs/heads/main')
+        if: false
+        # if: startsWith(github.ref, 'refs/heads/main')
         env:
           NPM_SECRET_TOKEN: ${{ secrets.NPM_TOKEN }}
           NUGET_SECRET_TOKEN: ${{ secrets.NUGET_TOKEN }}
@@ -128,7 +131,8 @@ jobs:
 
   pages:
     needs: build
-    if: startsWith(github.ref, 'refs/heads/main')
+    if: false
+    #if: startsWith(github.ref, 'refs/heads/main')
     runs-on: ubuntu-22.04
     permissions:
       pages: write # to deploy to Pages
