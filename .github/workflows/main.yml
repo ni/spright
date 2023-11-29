@@ -27,11 +27,11 @@ jobs:
           token: ${{ secrets.GITHUBPAGESDEPLOYTOKEN }}
 
       # Install dependencies
-      - uses: actions/setup-dotnet@v3
-        with:
-          global-json-file: packages/nimble-blazor/global.json
-      - run: dotnet --info
-        working-directory: packages/nimble-blazor/
+      # - uses: actions/setup-dotnet@v3
+      #   with:
+      #     global-json-file: packages/nimble-blazor/global.json
+      # - run: dotnet --info
+      #   working-directory: packages/nimble-blazor/
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -80,11 +80,9 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           onlyChanged: "!startsWith(github.ref, 'refs/heads/main')" # Use TurboSnap for PR builds
-          workingDir: ./packages/nimble-components
+          workingDir: ./packages/nimble-recipes-stratus
           externals: |
             - '.storybook/public/**'
-            - '../packages/nimble-tokens/dist/icons/svg/**'
-            - '../packages/nimble-tokens/source/styledictionary/properties/**'
           storybookBuildDir: ../../packages/site/dist/storybook
           exitOnceUploaded: true # Do not wait for test results
           exitZeroOnChanges: true # Option to prevent the workflow from failing
