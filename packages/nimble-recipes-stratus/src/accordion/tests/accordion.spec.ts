@@ -6,6 +6,8 @@ describe('Accordion', () => {
     });
 
     it('can construct an element instance', () => {
-        expect(document.createElement('nimble-accordion')).toBeInstanceOf(Accordion);
+        expect(document.createElement('nimble-accordion')).toBeInstanceOf(
+            Accordion
+        );
     });
 });

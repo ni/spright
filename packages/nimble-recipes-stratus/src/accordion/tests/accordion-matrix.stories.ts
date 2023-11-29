@@ -1,5 +1,8 @@
 import { ViewTemplate, html } from '@microsoft/fast-element';
 import type { Meta, StoryFn } from '@storybook/html';
+import { listOptionTag } from '@ni/nimble-components/dist/esm/list-option';
+import { numberFieldTag } from '@ni/nimble-components/dist/esm/number-field';
+import { selectTag } from '@ni/nimble-components/dist/esm/select';
 import {
     createMatrix,
     sharedMatrixParameters
@@ -9,9 +12,6 @@ import {
     createStory
 } from '../../utilities/tests/storybook';
 import { hiddenWrapper } from '../../utilities/tests/hidden';
-import { listOptionTag } from '@ni/nimble-components/dist/esm/list-option';
-import { numberFieldTag } from '@ni/nimble-components/dist/esm/number-field';
-import { selectTag } from '@ni/nimble-components/dist/esm/select';
 import { accordionTag } from '..';
 
 const metadata: Meta = {
@@ -41,5 +41,7 @@ export const accordionThemeMatrix: StoryFn = createMatrixThemeStory(
 );
 
 export const hiddenAccordion: StoryFn = createStory(
-    hiddenWrapper(html`<${accordionTag} hidden>Hidden Accordion</${accordionTag}>`)
+    hiddenWrapper(
+        html`<${accordionTag} hidden>Hidden Accordion</${accordionTag}>`
+    )
 );

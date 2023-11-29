@@ -54,6 +54,7 @@
     "@microsoft/fast-foundation": "*",
     "@microsoft/fast-web-utilities": "*",
     "@ni/nimble-components": "^20.14.8",
+    "@ni/nimble-tokens": "^6.8.0",
     "tslib": "^2.2.0"
   },
   "devDependencies": {
