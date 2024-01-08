@@ -1,7 +1,7 @@
 {
-  "name": "@ni/nimble-recipes-stratus",
+  "name": "@ni/spright-components-stratus",
   "version": "0.0.0",
-  "description": "Nimble-based UI recipes for the NI Stratus project",
+  "description": "Spright Components for the NI Stratus project",
   "scripts": {
     "build": "npm run build-components && npm run build-storybook",
     "lint": "npm run eslint && npm run prettier",
@@ -39,16 +39,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ni/nimble-recipes.git"
+    "url": "git+https://github.com/ni/spright.git"
   },
   "author": {
     "name": "National Instruments"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ni/nimble-recipes/issues"
+    "url": "https://github.com/ni/spright/issues"
   },
-  "homepage": "https://github.com/ni/nimble-recipes#readme",
+  "homepage": "https://github.com/ni/spright#readme",
   "dependencies": {
     "@microsoft/fast-element": "*",
     "@microsoft/fast-foundation": "*",

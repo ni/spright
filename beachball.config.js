@@ -7,7 +7,7 @@ module.exports = {
                     return `- ${entry.comment}`;
                   }
                   // Imitate GitHub's commit format https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls#commit-shas
-                  return `- ${entry.comment} ([ni/nimble-recipes@${entry.commit.substring(0,7)}](https://github.com/ni/nimble-recipes/commit/${entry.commit}))`;
+                  return `- ${entry.comment} ([ni/spright@${entry.commit.substring(0,7)}](https://github.com/ni/spright/commit/${entry.commit}))`;
             }
         }
     }

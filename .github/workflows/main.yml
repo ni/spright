@@ -80,10 +80,10 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           onlyChanged: "!startsWith(github.ref, 'refs/heads/main')" # Use TurboSnap for PR builds
-          workingDir: ./packages/nimble-recipes-stratus
+          workingDir: ./packages/spright-components-stratus
           externals: |
             - '.storybook/public/**'
-          storybookBuildDir: ../../packages/nimble-recipes-stratus/dist/storybook
+          storybookBuildDir: ../../packages/spright-components-stratus/dist/storybook
           exitOnceUploaded: true # Do not wait for test results
           exitZeroOnChanges: true # Option to prevent the workflow from failing
 

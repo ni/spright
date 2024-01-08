@@ -1,1 +1,1 @@
-# Contributing to Nimble Recipes
+# Contributing to Spright

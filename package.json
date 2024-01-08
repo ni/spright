@@ -1,8 +1,8 @@
 {
-  "name": "@ni-private/nimble-recipes",
+  "name": "@ni-private/spright",
   "version": "1.0.0",
   "private": true,
-  "description": "The NI Nimble UI Recipes Monorepo",
+  "description": "The NI Spright UI Components Monorepo",
   "scripts": {
     "postinstall": "patch-package",
     "build": "npm run build --workspaces --if-present",
@@ -18,21 +18,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ni/nimble-recipes.git"
+    "url": "git+https://github.com/ni/spright.git"
   },
   "author": {
     "name": "National Instruments"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ni/nimble-recipes/issues"
+    "url": "https://github.com/ni/spright/issues"
   },
-  "homepage": "https://github.com/ni/nimble-recipes#readme",
+  "homepage": "https://github.com/ni/spright#readme",
   "files": [
     "!*"
   ],
   "workspaces": [
-    "packages/nimble-recipes-stratus"
+    "packages/spright-components-stratus"
   ],
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
