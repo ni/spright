@@ -14,8 +14,7 @@ interface AccordionArgs {
     title: string;
 }
 
-const overviewText = `The \`nimble-accordion\` is a container that is designed to contain arbitrary content that is specified by a client
-application. The \`nimble-accordion\` is intended for grouping related content.`;
+const overviewText = 'The `spright-accordion` is a collapsible container which groups and contains arbitrary content or controls.';
 
 const metadata: Meta<AccordionArgs> = {
     title: 'Incubating/Accordion',

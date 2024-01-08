@@ -7,7 +7,7 @@ import { template } from './template';
 
 declare global {
     interface HTMLElementTagNameMap {
-        'nimble-accordion': Accordion;
+        'spright-accordion': Accordion;
     }
 }
 
@@ -16,12 +16,12 @@ declare global {
  */
 export class Accordion extends FoundationAccordion {}
 
-const nimbleAccordion = Accordion.compose({
+const sprightAccordion = Accordion.compose({
     baseName: 'accordion',
     baseClass: FoundationAccordion,
     template,
     styles
 });
 
-DesignSystem.getOrCreate().withPrefix('nimble').register(nimbleAccordion());
-export const accordionTag = DesignSystem.tagFor(Accordion);
+DesignSystem.getOrCreate().withPrefix('spright').register(sprightAccordion());
+export const accordionTag = 'spright-accordion';
