@@ -13,3 +13,12 @@ Examples include:
 ## How are Spright components organized?
 
 Spright components are organized into packages by product. Each product can provide one or more component packages built on FAST and Nimble (analagous to `@ni/nimble-components`). They may optionally also provide Angular and Blazor integration packages for those components, analagous to `@ni/nimble-angular` and `NimbleBlazor`. If a component is needed by multiple products, we can consider adding it to a core Spright package or to Nimble itself.
+
+## Why Spright?
+
+"Spright" is an archaic variant of "sprite" that is the root of "sprightly"; think of it as a rapidly moving peer of Nimble.
+
+This concept is inspired by the "recipes" concept in [Design System Pace Layers](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html). The goals are:
+
+1. Keep Nimble's core components at a high level of quality and reusability.
+2. Allow innovative new contributions to follow Nimble's architecture, leverage its infrastructure, and start on a path to being part of Nimble without being unnecessarily slowed by the rigorous process needed to achieve the first goal.
