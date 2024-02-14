@@ -1,0 +1,20 @@
+{
+  "name": "@ni/spright-components-stratus",
+  "entries": [
+    {
+      "date": "Wed, 14 Feb 2024 19:34:34 GMT",
+      "version": "0.0.0",
+      "tag": "@ni/spright-components-stratus_v0.0.0",
+      "comments": {
+        "none": [
+          {
+            "author": "7282195+m-akinc@users.noreply.github.com",
+            "package": "@ni/spright-components-stratus",
+            "commit": "7e9f78374be8c424d3bb204f742b290cddbc0b83",
+            "comment": "Update Storybook packages"
+          }
+        ]
+      }
+    }
+  ]
+}
