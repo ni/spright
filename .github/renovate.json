@@ -26,7 +26,7 @@
         "d3-",
         "prosemirror-"
       ],
-      "enabled": true
+      "automerge": true
     },
     {
       "groupName": "npm dev dependencies",
@@ -38,7 +38,7 @@
         "beachball",
         "storybook"
       ],
-      "enabled": true
+      "automerge": true
     },
     {
       "groupName": "nuget bunit dependencies",
@@ -46,7 +46,7 @@
       "matchPackagePatterns":[
         "^bunit"
       ],
-      "enabled": true
+      "automerge": true
     }
   ]
 }
