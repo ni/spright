@@ -6,7 +6,7 @@
   "enabledManagers": ["npm", "nuget"],
   "rebaseWhen": "conflicted",
   "schedule": [
-    "monthly"
+    "weekly"
   ],
   "packageRules": [
     {
@@ -19,12 +19,8 @@
       "rangeStrategy": "update-lockfile",
       "matchDepTypes": ["dependencies"],
       "matchPackagePatterns":[
-        "^@microsoft/fast",
-        "^@tanstack/",
-        "^@tiptap/",
-        "@types/markdown-it",
-        "d3-",
-        "prosemirror-"
+        "^@microsoft/fast-",
+        "^@ni/nimble-"
       ],
       "automerge": true
     },
