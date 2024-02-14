@@ -41,6 +41,9 @@
     "type": "git",
     "url": "git+https://github.com/ni/spright.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "National Instruments"
   },
