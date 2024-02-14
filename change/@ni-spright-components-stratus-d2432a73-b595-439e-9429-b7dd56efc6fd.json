@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Force initial package publication",
+  "packageName": "@ni/spright-components-stratus",
+  "email": "7282195+m-akinc@users.noreply.github.com",
+  "dependentChangeType": "patch"
+}
