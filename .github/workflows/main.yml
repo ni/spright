@@ -16,7 +16,7 @@ env:
   LC_ALL: "en_US.UTF-8"
   LANG: "en_US.UTF-8"
   LANGUAGE: "en_US.UTF-8"
-  HAS_GITHUBPAGESDEPLOYTOKEN: true #${{secrets.GITHUBPAGESDEPLOYTOKEN != ''}}
+  HAS_GITHUBPAGESDEPLOYTOKEN: ${{secrets.GITHUBPAGESDEPLOYTOKEN != ''}}
   HAS_CHROMATIC_PROJECT_TOKEN: ${{secrets.CHROMATIC_PROJECT_TOKEN != ''}}
   HAS_LHCI_GITHUB_APP_TOKEN: ${{secrets.LHCI_GITHUB_APP_TOKEN != ''}}
   HAS_NPM_TOKEN: ${{secrets.NPM_TOKEN != ''}}
@@ -27,13 +27,19 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+        if: env.HAS_GITHUBPAGESDEPLOYTOKEN == 'true'
         with:
           # Required for beachball changelog detection
           fetch-depth: 0
           # Must checkout with a token that can push to protected branches for beachball
           # Cannot rely on GITHUB_TOKEN with workflow contents permission
           # See: https://github.com/orgs/community/discussions/40971
-          # token: ${{ secrets.GITHUBPAGESDEPLOYTOKEN }}
+          token: ${{ secrets.GITHUBPAGESDEPLOYTOKEN }}
+      - uses: actions/checkout@v3
+        if: env.HAS_GITHUBPAGESDEPLOYTOKEN == 'false'
+        with:
+          # Required for beachball changelog detection
+          fetch-depth: 0
 
       # Install dependencies
       # - uses: actions/setup-dotnet@v3
