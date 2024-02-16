@@ -17,7 +17,7 @@ interface AccordionArgs {
 const overviewText = 'The `spright-accordion` is a collapsible container which groups and contains arbitrary content or controls.';
 
 const metadata: Meta<AccordionArgs> = {
-    title: 'Incubating/Accordion',
+    title: 'Components/Accordion',
     tags: ['autodocs'],
     parameters: {
         docs: {
@@ -29,10 +29,6 @@ const metadata: Meta<AccordionArgs> = {
     },
     render: createUserSelectedThemeStory(html`
     ${disableStorybookZoomTransform}
-    ${incubatingWarning({
-        componentName: 'accordion',
-        statusLink: 'https://github.com/ni/nimble/issues/296'
-    })}
         <${accordionTag}>
             <span slot="title">${x => x.title}</span>
             <${numberFieldTag}>Numeric field 1</${numberFieldTag}>

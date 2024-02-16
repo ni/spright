@@ -1,0 +1,92 @@
+{
+  "$schema": "../node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@ni/spright-angular-core": {
+      "projectType": "library",
+      "root": "projects/ni/spright-angular-core",
+      "sourceRoot": "projects/ni/spright-angular-core",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ni/spright-angular-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ni/spright-angular-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ni/spright-angular-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ni/spright-angular-core/test.ts",
+            "tsConfig": "projects/ni/spright-angular-core/tsconfig.spec.json",
+            "karmaConfig": "projects/ni/spright-angular-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ni/spright-angular-core/**/*.ts",
+              "projects/ni/spright-angular-core/**/*.js",
+              "projects/ni/spright-angular-core/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "@ni/spright-angular-stratus": {
+      "projectType": "library",
+      "root": "projects/ni/spright-angular-stratus",
+      "sourceRoot": "projects/ni/spright-angular-stratus",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ni/spright-angular-stratus/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ni/spright-angular-stratus/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ni/spright-angular-stratus/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ni/spright-angular-stratus/test.ts",
+            "tsConfig": "projects/ni/spright-angular-stratus/tsconfig.spec.json",
+            "karmaConfig": "projects/ni/spright-angular-stratus/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ni/spright-angular-stratus/**/*.ts",
+              "projects/ni/spright-angular-stratus/**/*.js",
+              "projects/ni/spright-angular-stratus/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

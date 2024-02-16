@@ -1,13 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "schedule:weekly"
   ],
   "enabledManagers": ["npm", "nuget"],
   "rebaseWhen": "conflicted",
-  "schedule": [
-    "weekly"
-  ],
   "packageRules": [
     {
       "matchManagers": ["npm"],

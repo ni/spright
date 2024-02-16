@@ -1,0 +1,36 @@
+{
+  "name": "@ni/spright-angular-stratus",
+  "version": "0.0.1",
+  "description": "Angular APIs for the NI Spright Stratus components",
+  "scripts": {
+    "invoke-publish": "cd ../../../ && npm run build:stratus && cd dist/ni/spright-angular-stratus && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ni/spright.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "National Instruments"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ni/spright/issues"
+  },
+  "homepage": "https://github.com/ni/spright#readme",
+  "exports": {
+    "./styles/*": {
+      "sass": "./styles/*.scss"
+    }
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.2.10",
+    "@angular/core": "^15.2.10",
+    "@ni/spright-components-stratus": "file:../../../../packages/spright-components-stratus/dist"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}

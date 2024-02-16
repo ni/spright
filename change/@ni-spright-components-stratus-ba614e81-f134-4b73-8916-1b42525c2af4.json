@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "Configure package for publishing",
-  "packageName": "@ni/spright-components-stratus",
-  "email": "7282195+m-akinc@users.noreply.github.com",
-  "dependentChangeType": "none"
-}
