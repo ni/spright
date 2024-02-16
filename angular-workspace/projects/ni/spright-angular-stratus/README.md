@@ -1,5 +1,5 @@
 <div align="center">
-    <p><b>ni | spright | angular</b></p>
+    <p><b>ni | spright | angular | stratus</b></p>
 </div>
 
 # Spright Angular Stratus

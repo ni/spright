@@ -4,6 +4,6 @@
 /dist/esm/**/tests
 
 # The storybook build ends up making a duplicate
-# typescript build of spright-components-stratus inside the dist folder
+# typescript build of spright-components-armstrong inside the dist folder
 # See https://github.com/ni/nimble/issues/568
-/dist/esm/spright-components-stratus
+/dist/esm/spright-components-armstrong
