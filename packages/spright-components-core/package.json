@@ -1,7 +1,7 @@
 {
-  "name": "@ni/spright-components-stratus",
+  "name": "@ni/spright-components-core",
   "version": "0.0.1",
-  "description": "Spright Components for the NI Stratus project",
+  "description": "Core NI Spright Components",
   "scripts": {
     "build": "npm run build-components && npm run build-storybook",
     "lint": "npm run eslint && npm run prettier",

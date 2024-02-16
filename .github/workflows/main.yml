@@ -18,7 +18,6 @@ env:
   LANGUAGE: "en_US.UTF-8"
   HAS_GITHUBPAGESDEPLOYTOKEN: ${{secrets.GITHUBPAGESDEPLOYTOKEN != ''}}
   HAS_CHROMATIC_PROJECT_TOKEN: ${{secrets.CHROMATIC_PROJECT_TOKEN != ''}}
-  HAS_LHCI_GITHUB_APP_TOKEN: ${{secrets.LHCI_GITHUB_APP_TOKEN != ''}}
   HAS_NPM_TOKEN: ${{secrets.NPM_TOKEN != ''}}
   HAS_NUGET_TOKEN: ${{secrets.NUGET_TOKEN != ''}}
 
@@ -99,13 +98,6 @@ jobs:
 
       # Test
       - run: npm run test
-
-      # Run Lighthouse audit (from any push)
-      - name: Performance Audit with Lighthouse CI
-        if: env.HAS_LHCI_GITHUB_APP_TOKEN == 'true' && github.event_name == 'push'
-        run: npm run performance
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
       # Check Changelog
       - run: npm run check
