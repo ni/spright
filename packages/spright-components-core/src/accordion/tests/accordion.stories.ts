@@ -5,8 +5,7 @@ import { numberFieldTag } from '@ni/nimble-components/dist/esm//number-field';
 import { selectTag } from '@ni/nimble-components/dist/esm//select';
 import {
     createUserSelectedThemeStory,
-    disableStorybookZoomTransform,
-    incubatingWarning
+    disableStorybookZoomTransform
 } from '../../utilities/tests/storybook';
 import { accordionTag } from '..';
 

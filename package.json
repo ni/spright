@@ -34,9 +34,11 @@
   "workspaces": [
     "packages/spright-components-core",
     "packages/spright-components-stratus",
+    "packages/spright-components-armstrong",
     "angular-workspace",
     "angular-workspace/projects/ni/spright-angular-core",
-    "angular-workspace/projects/ni/spright-angular-stratus"
+    "angular-workspace/projects/ni/spright-angular-stratus",
+    "packages/spright-blazor-armstrong"
   ],
   "devDependencies": {
     "beachball": "^2.31.0",

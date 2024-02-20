@@ -1,0 +1,14 @@
+﻿@page "/DemoSaysHello"
+@namespace SprightBlazorArmstrong.Tests.Acceptance.Pages
+@inherits LayoutComponentBase
+
+<SprightDemo @onclick="ClickHandler" @ref="_demo">Say Hello</SprightDemo>
+
+@code {
+    private SprightDemo? _demo;
+
+    public async Task ClickHandler()
+    {
+        await _demo!.SayHelloAsync();
+    }
+}

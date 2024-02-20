@@ -28,7 +28,7 @@
   "peerDependencies": {
     "@angular/common": "^15.2.10",
     "@angular/core": "^15.2.10",
-    "@ni/spright-components-core": "file:../../../../packages/spright-components-core/dist"
+    "@ni/spright-components-core": "*"
   },
   "dependencies": {
     "tslib": "^2.2.0"

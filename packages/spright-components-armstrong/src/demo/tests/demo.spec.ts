@@ -1,5 +1,11 @@
+import { Demo, demoTag } from '..';
+
 describe('Demo', () => {
-    it('this test is just a placeholder until other components with tests are added', () => {
-        expect(true).toBe(true);
+    it('should export its tag', () => {
+        expect(demoTag).toBe('spright-demo');
+    });
+
+    it('can construct an element instance', () => {
+        expect(document.createElement('spright-demo')).toBeInstanceOf(Demo);
     });
 });

@@ -1,0 +1,167 @@
+{
+    "version": "2.0.0",
+    "presentation": {
+      "echo": false,
+      "reveal": "always",
+      "focus": false,
+      "panel": "dedicated",
+      "showReuseMessage": true
+    },
+    "tasks": [
+        {
+            "label": "Create Watch Terminals",
+            "dependsOn": [
+                "stratus-components:build",
+                "stratus-components:tdd",
+                "stratus-storybook",
+                "core-components:build",
+                "core-components:tdd",
+                "core-storybook",
+                "ng serve"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "stratus-components:build",
+            "type": "shell",
+            "command": "npm run build-components:watch -w @ni/spright-components-stratus",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "stratus-components:tdd",
+            "type": "shell",
+            "command": "npm run tdd:watch -w @ni/spright-components-stratus",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "stratus-storybook",
+            "type": "shell",
+            "command": "npm run storybook -w @ni/spright-components-stratus",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "core-components:build",
+            "type": "shell",
+            "command": "npm run build-components:watch -w @ni/spright-components-core",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "core-components:tdd",
+            "type": "shell",
+            "command": "npm run tdd:watch -w @ni/spright-components-core",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "core-storybook",
+            "type": "shell",
+            "command": "npm run storybook -w @ni/spright-components-core",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "label": "ng serve",
+            "type": "shell",
+            "command": "npm run start -w angular-workspace",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": {
+                "group": "watch-group"
+            }
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "npm run build --workspaces --if-present"
+        },
+        {
+            "label": "armstrong-blazor-server-example:build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Server/Demo.Server.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Server/"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "armstrong-blazor-wasm-example:build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Client/Demo.Client.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Client/"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "armstrong-blazor-server-example:watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Server/Demo.Server.csproj"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Server/"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "armstrong-blazor-wasm-example:watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Client/Demo.Client.csproj"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/packages/spright-blazor-armstrong/Examples/Demo.Client/"
+            },
+            "problemMatcher": "$msCompile"
+        },
+    ]
+  }

@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
     root: true,
     ignorePatterns: [
+        '!**/*',
         '**/dist'
     ],
     plugins: ['jsdoc'],
@@ -13,14 +14,6 @@ module.exports = {
                 '@ni/eslint-config-angular',
                 '@ni/eslint-config-angular/requiring-type-checking'
             ],
-            parserOptions: {
-                project: [
-                    './tsconfig.lib.json',
-                    './tsconfig.spec.json'
-                ],
-                tsconfigRootDir: __dirname,
-                createDefaultProgram: true
-            },
             rules: {
                 'no-restricted-imports': ['error', {
                     patterns:
@@ -54,7 +47,7 @@ module.exports = {
 
                 // Use package.json from angular-workspace root
                 'import/no-extraneous-dependencies': ['error', { packageDir: path.resolve(__dirname, './') }],
-                
+
                 // Spright Angular Components follow web component naming conventions
                 // where the attribute and property names are different formats
                 '@angular-eslint/no-input-rename': 'off',

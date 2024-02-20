@@ -1,0 +1,8 @@
+dist
+Examples/*/bin
+Examples/*/obj
+SprightBlazorArmstrong/bin
+SprightBlazorArmstrong/obj
+SprightBlazorArmstrong/wwwroot/nimble-tokens
+SprightBlazorArmstrong/wwwroot/spright-components-armstrong
+SprightBlazorArmstrong/wwwroot/SprightBlazorArmstrong.HybridWorkaround.js
