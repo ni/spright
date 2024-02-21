@@ -122,4 +122,5 @@ jobs:
         env:
           NPM_SECRET_TOKEN: ${{ secrets.NPM_TOKEN }}
           NUGET_SECRET_TOKEN: ${{ secrets.NUGET_TOKEN }}
-        run: npm run invoke-publish
+        # run: npm run invoke-publish
+        run: echo "Skipping publish for now"
