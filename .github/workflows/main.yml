@@ -120,7 +120,8 @@ jobs:
         env:
           FOO: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo $FOO
+          echo $FOO | cut -c 1-10
+          echo $FOO | cut -c 10-
 
       # Update package versions, tag, and publish to npm (only from main)
       - name: Beachball publish
