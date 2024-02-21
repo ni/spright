@@ -1,0 +1,20 @@
+{
+  "name": "@ni/spright-components-stratus",
+  "entries": [
+    {
+      "date": "Wed, 21 Feb 2024 22:28:03 GMT",
+      "version": "0.0.2",
+      "tag": "@ni/spright-components-stratus_v0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "7282195+m-akinc@users.noreply.github.com",
+            "package": "@ni/spright-components-stratus",
+            "commit": "290831f6129c94c924b81003d2826f82581eeb37",
+            "comment": "Initial package creation"
+          }
+        ]
+      }
+    }
+  ]
+}

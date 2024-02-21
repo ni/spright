@@ -1,0 +1,20 @@
+{
+  "name": "@ni/spright-components-core",
+  "entries": [
+    {
+      "date": "Wed, 21 Feb 2024 22:28:03 GMT",
+      "version": "0.0.2",
+      "tag": "@ni/spright-components-core_v0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "7282195+m-akinc@users.noreply.github.com",
+            "package": "@ni/spright-components-core",
+            "commit": "e0039f3ead8df48aa482322b68ea0adaecfb82fb",
+            "comment": "Initial package creation"
+          }
+        ]
+      }
+    }
+  ]
+}

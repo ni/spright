@@ -1,6 +1,6 @@
 {
   "name": "@ni/spright-components-stratus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Spright Components for the NI Stratus project",
   "scripts": {
     "build": "npm run build-components && npm run build-storybook",

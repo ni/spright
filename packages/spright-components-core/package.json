@@ -1,6 +1,6 @@
 {
   "name": "@ni/spright-components-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core NI Spright Components",
   "scripts": {
     "build": "npm run build-components && npm run build-storybook",

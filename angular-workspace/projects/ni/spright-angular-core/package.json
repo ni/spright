@@ -1,6 +1,6 @@
 {
   "name": "@ni/spright-angular-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular APIs for the NI Spright core components",
   "scripts": {
     "invoke-publish": "cd ../../../ && npm run build:core && cd dist/ni/spright-angular-core && npm publish"

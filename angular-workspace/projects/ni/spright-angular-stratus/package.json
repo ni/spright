@@ -1,6 +1,6 @@
 {
   "name": "@ni/spright-angular-stratus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular APIs for the NI Spright Stratus components",
   "scripts": {
     "invoke-publish": "cd ../../../ && npm run build:stratus && cd dist/ni/spright-angular-stratus && npm publish"
