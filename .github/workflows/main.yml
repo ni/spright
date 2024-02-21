@@ -116,6 +116,12 @@ jobs:
           git config --global user.name "${{ env.GITHUB_SERVICE_USER }}"
           git config --global user.email "${{ env.GITHUB_SERVICE_EMAIL }}"
 
+      - name: Debug
+        env:
+          FOO: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo $FOO
+
       # Update package versions, tag, and publish to npm (only from main)
       - name: Beachball publish
         if: env.HAS_GITHUBPAGESDEPLOYTOKEN == 'true' && env.HAS_NPM_TOKEN == 'true' && env.HAS_NUGET_TOKEN == 'true' && startsWith(github.ref, 'refs/heads/main')
