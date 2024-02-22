@@ -1,6 +1,6 @@
 {
   "name": "@ni/spright-blazor-armstrong",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Spright Blazor components for Armstrong",
   "scripts": {
     "postinstall": "node build/generate-playwright-version-properties/source/index.js",

@@ -1,0 +1,20 @@
+{
+  "name": "@ni/spright-blazor-armstrong",
+  "entries": [
+    {
+      "date": "Thu, 22 Feb 2024 00:00:45 GMT",
+      "version": "0.0.3",
+      "tag": "@ni/spright-blazor-armstrong_v0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "rajsite@users.noreply.github.com",
+            "package": "@ni/spright-blazor-armstrong",
+            "commit": "f85383eb07d0fae93aedb38aa6ea05611ca2418e",
+            "comment": "Align nuget and npm package versions"
+          }
+        ]
+      }
+    }
+  ]
+}
