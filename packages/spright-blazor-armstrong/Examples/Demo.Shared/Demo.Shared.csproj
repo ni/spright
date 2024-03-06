@@ -21,7 +21,7 @@
   <ItemGroup>
     <AdditionalFiles Include="..\..\CodeAnalysisDictionary.xml" Link="CodeAnalysisDictionary.xml" />
     <PackageReference Include="NI.CSharp.Analyzers" Version="2.0.4" />
-    <PackageReference Include="NimbleBlazor" Version="14.1.6" />
+    <PackageReference Include="NimbleBlazor" Version="14.3.17" />
   </ItemGroup>
 
   <ItemGroup>

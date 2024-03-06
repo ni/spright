@@ -33,7 +33,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NimbleBlazor" Version="14.1.6" />
+    <PackageReference Include="NimbleBlazor" Version="14.3.17" />
   </ItemGroup>
 
   <ItemGroup>
